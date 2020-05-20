@@ -43,4 +43,8 @@ export const getMoreArticleList = (page) => {
         console.log('homeList get Error', e)
       })
   }
-}
+};
+export const getChangeBackShowAction = (isShow)=>({
+  type:actionTypes.CHANGE_BACK_SHOW,
+  isShow
+})

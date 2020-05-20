@@ -5,8 +5,20 @@ export const HomeWrapper = styled.div`
   margin:0 auto;
   width:960px;
 `;
-
+export const BackTop = styled.div`
+  position:fixed;
+  bottom:30px;
+  right:30px;
+  height:50px;
+  width:50px;
+  line-height:50px;
+  border:1px solid #ccc;
+  border-radius:50%;
+  text-align:center;
+  font-size:12px;
+`;
 export const HomeLeft = styled.div`
+  box-sizing:border-box;
   overflow:hidden;
   float:left;
   margin-left:15px;

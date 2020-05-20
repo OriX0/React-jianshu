@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { PureComponent, Fragment } from 'react';
 import {
   HeaderWrapper,
   LogoWrapper,
@@ -20,16 +20,19 @@ import { CSSTransition } from 'react-transition-group';
 import Logo from './Logo';
 import { connect } from 'react-redux';
 import { actionCreators } from './store';
+import {Link} from 'react-router-dom';
 
-class Header extends Component {
+class Header extends PureComponent {
 
   render () {
     const { focused, handleFocus, handleBlur, hotSearchList } = this.props;
     return (
       <HeaderWrapper>
-        <LogoWrapper>
-          <Logo />
-        </LogoWrapper>
+        <Link to='/'>
+          <LogoWrapper>
+            <Logo />
+          </LogoWrapper>
+        </Link>
         <Nav>
           <NavItem className='left active' href='/'>首页</NavItem>
           <NavItem className='left'>下载APP</NavItem>

@@ -8,7 +8,8 @@ const defaultState = fromJS({
   writeInfoList: [],
   articlePage: 1,
   articleTotalPage: 2,
-  articlePageSize: 3
+  articlePageSize: 3,
+  backTopIsShow:false
 });
 
 export default (state = defaultState, action) => {
@@ -31,6 +32,8 @@ export default (state = defaultState, action) => {
         articlePage: action.nextPage,
         articleTotalPage: totalPage
       })
+    case actionTypes.CHANGE_BACK_SHOW:
+      return state.set('backTopIsShow',action.isShow)
     default:
       return state;
   }

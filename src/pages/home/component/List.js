@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { PureComponent, Fragment } from 'react';
 import { connect } from 'react-redux';
 import {
   ArticleListItem,
@@ -6,7 +6,7 @@ import {
   ReadMoreArticle
 } from '../style';
 import { actionCreator } from '../store';
-class List extends Component {
+class List extends PureComponent {
 
   render () {
     const { articleList, articlePage, articleTotalPage, handelReadMoreClick } = this.props;

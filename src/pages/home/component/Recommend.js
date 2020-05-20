@@ -1,11 +1,11 @@
-import React, { Component, Fragment } from 'react';
+import React, { PureComponent, Fragment } from 'react';
 import { connect } from 'react-redux';
 import {
   RecommendWrapper,
   RecommendItem,
   DownloadAppInfo
 } from '../style.js'
-class Recommend extends Component {
+class Recommend extends PureComponent {
 
   render () {
     const { recommendBgImgList, downLoadQR } = this.props;

@@ -1,11 +1,11 @@
-import React, { Component, Fragment } from 'react';
+import React, { PureComponent, Fragment } from 'react';
 import { connect } from 'react-redux';
 import {
   TopicWrapper,
   TopicItem
 } from '../style.js';
 
-class Topic extends Component {
+class Topic extends PureComponent {
 
   render () {
     const { TopicList } = this.props;
