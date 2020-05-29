@@ -62,29 +62,29 @@
     "downLoadQR": "https://s1.ax1x.com/2020/05/19/YIICzn.png",
     "writeInfoList": [{
         "id": 1,
-        "avatarUrl": "https://upload.jianshu.io/users/upload_avatars/5796592/73837104-47e5-4fe9-a5be-054bd50b06f7.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
-        "writerName": "乔汉童",
+        "avatarUrl": "https://upload.jianshu.io/users/upload_avatars/15906514/361e1c81-5f2e-4244-a690-f850190a9554.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/300/format/webp",
+        "writerName": "作者1",
         "numberChar": "362k",
         "numberLike": "2k"
       },
       {
         "id": 2,
-        "avatarUrl": "https://upload.jianshu.io/users/upload_avatars/7663825/7c28763e-002b-4e89-8dea-5b8da210ef2c.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
-        "writerName": "名贵的考拉熊",
+        "avatarUrl": "https://upload.jianshu.io/users/upload_avatars/15906514/361e1c81-5f2e-4244-a690-f850190a9554.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/300/format/webp",
+        "writerName": "作者2",
         "numberChar": "253.8k",
         "numberLike": "19.3k"
       },
       {
         "id": 3,
-        "avatarUrl": "https://upload.jianshu.io/users/upload_avatars/2631077/dc99c361412c?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
-        "writerName": "木清琳",
+        "avatarUrl": "https://upload.jianshu.io/users/upload_avatars/15906514/361e1c81-5f2e-4244-a690-f850190a9554.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/300/format/webp",
+        "writerName": "作者3",
         "numberChar": "277.5k",
         "numberLike": "29.4k"
       },
       {
         "id": 4,
-        "avatarUrl": "https://upload.jianshu.io/users/upload_avatars/14715425/e0668349-8c75-43db-8a9d-c388e5f00d0d.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
-        "writerName": "Hobbit霍比特人",
+        "avatarUrl": "https://upload.jianshu.io/users/upload_avatars/15906514/361e1c81-5f2e-4244-a690-f850190a9554.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/300/format/webp",
+        "writerName": "作者4",
         "numberChar": "281.2k",
         "numberLike": "1.1k"
       }

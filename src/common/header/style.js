@@ -7,6 +7,7 @@ export const HeaderWrapper = styled.header`
   max-width:1440px;
   margin:0 auto;
   border-bottom:1px solid #f0f0f0;
+  box-shadow:0 2px 10px rgba(0,0,0,.05);
 `;
 export const LogoWrapper = styled.div`
   position:absolute;
