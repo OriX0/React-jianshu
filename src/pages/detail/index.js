@@ -1,4 +1,4 @@
-import React, { Fragment, Component } from 'react';
+import React, { PureComponent } from 'react';
 import {
   AllWrapper,
   MainWrapper,
@@ -13,10 +13,10 @@ import {
   GiveReward
 } from './style';
 import {connect} from 'react-redux';
+import {withRouter} from 'react-router-dom';
 import {actionCreators} from './store';
-import {fromJS} from 'immutable';
 
-class Detail extends Component {
+class Detail extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {}
@@ -76,6 +76,7 @@ class Detail extends Component {
   }
   componentDidMount(){
     const id = this.props.match.params.id;
+    console.log('id',id)
     this.props.initDetailData(id);
   }
 }
@@ -100,4 +101,4 @@ const mapDispatchToProps = (dispatch)=>{
   }
 } 
 
-export default connect(mapStateToProps,mapDispatchToProps)(Detail);
+export default connect(mapStateToProps,mapDispatchToProps)(withRouter(Detail));

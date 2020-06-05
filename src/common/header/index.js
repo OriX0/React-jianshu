@@ -21,11 +21,12 @@ import Logo from './Logo';
 import { connect } from 'react-redux';
 import { actionCreators } from './store';
 import {Link} from 'react-router-dom';
+import {actionCreator as loginActionCreator} from '../../pages/login/store';
 
 class Header extends PureComponent {
 
   render () {
-    const { focused, handleFocus, handleBlur, hotSearchList } = this.props;
+    const { focused, handleFocus, handleBlur, hotSearchList,login,loginOut } = this.props;
     return (
       <HeaderWrapper>
         <Link to='/'>
@@ -39,8 +40,11 @@ class Header extends PureComponent {
           <NavItem className='right'>
             <span className="iconfont">&#xe636;</span>
           </NavItem>
-          <NavItem className='right'>登录</NavItem>
-
+          {login?
+            <NavItem 
+              className='right'
+              onClick={loginOut}>退出</NavItem>:
+            <NavItem href='/sign_in' className='right'>登录</NavItem>}
           <SearchWrapper>
             <CSSTransition
               in={focused}
@@ -59,9 +63,11 @@ class Header extends PureComponent {
           </SearchWrapper>
           <Actions>
             <Button className='reg'>注册</Button>
+            <Link to='/write'>
             <Button className='writing'>
               <span className="iconfont">&#xe6e5; </span>
               写文章</Button>
+            </Link>
           </Actions>
         </Nav>
       </HeaderWrapper>
@@ -124,7 +130,8 @@ const mapStateToProps = (state) => {
     tipMouseIn: state.getIn(['header', 'tipMouseIn']),
     page: state.getIn(['header', 'page']),
     totalPage: state.getIn(['header', 'totalPage']),
-    pagesize: state.getIn(['header', 'pagesize'])
+    pagesize: state.getIn(['header', 'pagesize']),
+    login:state.getIn(['login','login'])
   }
 }
 const mapDispatchToProps = (dispatch) => {
@@ -155,6 +162,9 @@ const mapDispatchToProps = (dispatch) => {
         newPage = page + 1;
       }
       dispatch(actionCreators.getHotSearchPageChangeAction(newPage));
+    },
+    loginOut() {
+      dispatch(loginActionCreator.getLoginOutAction())
     }
   }
 }

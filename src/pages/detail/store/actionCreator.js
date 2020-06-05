@@ -4,7 +4,7 @@ import Axios from 'axios';
 
 export const getDetailInitData = (id)=>{
   return (dispatch)=>{
-    Axios.get('./apiList/detail.json')
+    Axios.get('../apiList/detail.json')
       .then((res)=>{
         dispatch(getInitDetailDataAction(res.data.data))
       })

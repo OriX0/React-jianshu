@@ -9,7 +9,7 @@ export const getHotSearchListAction = (data) => ({
 })
 export const getHotSearchList = () => {
   return (dispatch) => {
-    Axios.get('./apiList/header.json')
+    Axios.get('../apiList/header.json')
       .then((res) => {
         const data = res.data.hotSearchList;
         const action = getHotSearchListAction(data);
